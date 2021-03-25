@@ -1,0 +1,35 @@
+.news {
+  background: rgba(34, 36, 43, 0.8);
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'ubuntu', Arial, sans-serif;
+}
+
+.news:last-child {
+  margin-bottom: 0;
+}
+
+.news__description {
+  margin-bottom: 40px;
+}
+
+.news__data {
+  display: flex;
+}
+
+.news__data-item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.news__icon {
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  max-height: 32px;
+  margin-right: 10px;
+}

@@ -1,0 +1,41 @@
+:root {
+  --main-font-size: 18px;
+
+  --normal: 400;
+  --bold: 700;
+
+  --font-family-primary: 'Montserrat', Arial, sans-serif;
+  --font-family-secondary: 'OpenSans', Arial, sans-serif;
+
+  --line-height-primary: 1.4;
+
+  --desktop-width: 1440px;
+  --md-desktop-width: 1160px;
+  --sm-desktop-width: 980px;
+  --table-width: 768px;
+  --phone-width: 480px;
+  --sm-phone-width: 320px;
+
+  --button-color-primary: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  --button-color-primaryHover: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  --button-color-secondary: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+
+  --text-color: #1f2041;
+  --text-color-brightness-75: rgba(31, 32, 65, 0.75);
+  --text-color-brightness-50: rgba(31, 32, 65, 0.5);
+  --text-color-brightness-25: rgba(31, 32, 65, 0.25);
+  --button-text-color-primary: #fff;
+  --button-text-color-secondary: #bc9cff;
+
+  --primary-color: #17a1cc;
+  --secondary-color: #6fcf97;
+  --body-color: #e5e5e5;
+  --bg-color-primary: #ffffff;
+  --danger-color: #fc5c65;
+
+  --tr-fast: 0.25s;
+  --tr-mid: 0.5s;
+
+  --border-input: 1px solid rgba(31, 32, 65, 0.25);
+  --border-input-hover: 1px solid rgba(31, 32, 65, 0.5);
+}

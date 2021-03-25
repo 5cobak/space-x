@@ -1,0 +1,30 @@
+.preview {
+  background-image: url('./img/cosmonaut.png');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  min-height: 100vh;
+}
+
+.preview__logo {
+  height: 50px;
+}
+
+.preview__title {
+  display: inline-block;
+  color: white;
+  font-family: 'teko-light', Arial, sans-serif;
+  font-size: 80px;
+  max-width: 400px;
+  color: var(--primary-color);
+  line-height: 1.1;
+  margin-top: 140px;
+  margin-bottom: 110px;
+}
+
+.preview__second-title:nth-child(1) {
+  font-family: 'teko';
+}
+
+.preview__title-span {
+  color: white;
+}
