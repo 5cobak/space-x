@@ -1,12 +1,49 @@
 .preview {
   background-image: url('./img/cosmonaut.png');
   background-repeat: no-repeat;
-  background-position-x: 100%;
+  background-position-x: 65%;
   min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .preview {
+    background-position-x: center;
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .preview {
+    background-position-x: center;
+    background-size: 300%;
+  }
 }
 
 .preview__logo {
   height: 50px;
+  animation-name: leftToRight;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 2s;
+}
+
+@media screen and (max-width: 768px) {
+  .preview__logo {
+    font-size: 50px;
+    max-width: 200px;
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+  }
 }
 
 .preview__title {
@@ -19,6 +56,12 @@
   line-height: 1.1;
   margin-top: 140px;
   margin-bottom: 110px;
+}
+
+@media screen and (max-width: 768px) {
+  .preview__title {
+    font-size: 50px;
+  }
 }
 
 .preview__second-title:nth-child(1) {

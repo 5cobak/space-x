@@ -1,3 +1,15 @@
+.loader-wrapper {
+  background: #151418;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+
 .loader {
   display: inline-block;
   position: relative;

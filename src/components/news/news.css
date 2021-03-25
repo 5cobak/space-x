@@ -5,25 +5,120 @@
   display: flex;
   margin-bottom: 20px;
   color: white;
+  text-decoration: none;
   font-family: 'ubuntu', Arial, sans-serif;
+  animation-name: downToUp;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 2s;
+  transition: background 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .news {
+    padding: 20px;
+  }
+}
+
+.news:hover {
+  background: rgba(35, 161, 202, 0.3);
+}
+
+.news:hover .news__img-wrapper {
+  background-color: rgba(34, 36, 43, 0.8);
+}
+
+@keyframes downToUp {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+  }
 }
 
 .news:last-child {
   margin-bottom: 0;
 }
 
+.news__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 50%;
+  background: rgba(23, 161, 204, 0.7);
+  margin-right: 60px;
+  transition: background 0.3s;
+}
+@media screen and (max-width: 980px) {
+  .news__img-wrapper {
+    min-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+  }
+  .news__img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news__img-wrapper {
+    display: none;
+  }
+}
+
+.news__mission {
+  color: #17a1cc;
+  font-size: 24px;
+  font-family: 'teko', Arial, sans-serif;
+  letter-spacing: 7px;
+}
+
+.news__mission-title {
+  font-size: 72px;
+  line-height: 100%;
+  font-family: 'teko', Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .news__mission-title {
+    font-size: 50px;
+  }
+}
+
 .news__description {
   margin-bottom: 40px;
+  font-family: 'ubuntu', Arial, sans-serif;
 }
 
 .news__data {
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .news__data {
+    flex-direction: column;
+  }
+}
+
 .news__data-item {
   display: flex;
   align-items: center;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .news__data-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .news__icon {

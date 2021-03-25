@@ -97,9 +97,9 @@ module.exports = {
       template: `${PATHS.src}/pages/index/index.html`,
     }),
     new CleanWebpackPlugin(),
-    // new CopyWebpackPlugin({
-    // patterns: [{ from: `${PATHS.src}/pages/index/img`, to: 'assets/img' }],
-    // }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: `${PATHS.src}/components/news/img`, to: 'assets/img' }],
+    }),
     new MiniCssExtractPlugin({
       filename: filename('css'),
       linkType: false,

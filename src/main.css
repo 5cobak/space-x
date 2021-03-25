@@ -6,19 +6,20 @@ html {
   line-height: var(--line-height-primary);
   font-size: var(--main-font-size);
   height: 100%;
+  background-color: #151418;
 }
 
-@media screen and (max-width: var(--table-width)) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-@media screen and (max-width: var(--phone-width)) {
+@media screen and (max-width: 480px) {
   html {
     font-size: 15px;
   }
 }
-@media screen and (max-width: var(--sm-phone-width)) {
+@media screen and (max-width: 320px) {
   html {
     font-size: 14px;
   }
@@ -60,33 +61,41 @@ body {
   height: 100%;
   flex: 0 0 auto;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px;
   max-width: var(--md-desktop-width);
 }
 
-@media screen and (max-width: var(--md-desktop-width)) {
+@media screen and (max-width: 1160px) {
   .container {
     max-width: var(--sm-desktop-width);
-    padding: 0 10px;
+    padding: 10px 0;
   }
 }
-@media screen and (max-width: var(--sm-desktop-width)) {
+@media screen and (max-width: 980px) {
   .container {
     width: 100%;
+    padding: 0 20px;
   }
 }
-@media (min-width: var(--phone-width)) and (max-width: var(--table-width)) {
+@media screen and (max-width: 768px) {
   .container {
     width: 100%;
-    padding: 0 18px;
+    padding: 0 30px;
   }
 }
-@media (min-width: var(--sm-phone-width)) and (max-width: var(--phone-width)) {
+@media screen and (max-width: 480px) {
   .container {
     max-width: 100vw;
-    padding: 0 10px;
+    padding: 0 30px;
   }
+}
+
+.stop-scrolling {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 @import './components/preview/preview.css';
 @import './components/news/news.css';
+@import './components/loader/loader.css';
